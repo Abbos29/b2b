@@ -140,6 +140,13 @@ h6 {
   padding: 0 20px;
 }
 
+.section-title {
+  font-size: 34.56px;
+  font-weight: 800;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
 .btn-main {
   background-color: #55D7DC;
   color: #fff;
@@ -209,7 +216,7 @@ body::-webkit-scrollbar-thumb {
   bottom: -3px;
   width: 0;
   height: 2px;
-  background-color: #A1A5FB;
+  background-color: #a1a5fb;
   -webkit-transition: width 0.5s;
   -o-transition: width 0.5s;
   transition: width 0.5s;
@@ -218,7 +225,7 @@ body::-webkit-scrollbar-thumb {
 .link:hover::after {
   width: 100%;
   left: 0;
-  background-color: #A1A5FB;
+  background-color: #a1a5fb;
 }
 
 header {
@@ -550,6 +557,8 @@ nav {
       -ms-flex-align: center;
           align-items: center;
   gap: 30px;
+  -webkit-box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.3);
 }
 
 .hero__img {
@@ -597,6 +606,68 @@ nav {
   font-size: 8px;
   font-weight: 500;
   color: #f8f8f8;
+}
+
+.our {
+  padding: 60px 0;
+  background: -webkit-gradient(linear, left top, left bottom, from(#8c8fc5), to(#000000));
+  background: -o-linear-gradient(top, #8c8fc5 0%, #000000 100%);
+  background: linear-gradient(180deg, #8c8fc5 0%, #000000 100%);
+  border-radius: 20px 20px 0 0;
+  /* .our__wrapper */
+  /* .our__top */
+  /* .our__grid */
+  /* .our__card */
+  /* .our__card-inner */
+  /* .our__swiper */
+  /* .our__swiper-icon */
+  /* .our__swiper-title */
+}
+
+.our__wrapper {
+  background: -webkit-gradient(linear, left top, right top, from(#0f0f0f), to(#23232d));
+  background: -o-linear-gradient(left, #0f0f0f 0%, #23232d 100%);
+  background: linear-gradient(90deg, #0f0f0f 0%, #23232d 100%);
+  border-radius: 25px;
+  padding: 40px 50px;
+}
+
+.our__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  padding-bottom: 15px;
+}
+
+.our__grid {
+  margin-top: 35px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 40px 40px;
+  grid-template-rows: 1fr;
+}
+
+.our__card {
+  padding: 20px 30px;
+  background: #2f35495c;
+  border: 1px solid #464646;
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 10px;
 }
 
 @media (min-width: 1700px) {
