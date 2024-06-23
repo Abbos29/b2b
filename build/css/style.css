@@ -761,6 +761,96 @@ nav {
   top: 0px;
 }
 
+.review {
+  background: -o-linear-gradient(339.46deg, #a3a8ff 6.4%, #333558 106.46%);
+  background: linear-gradient(110.54deg, #a3a8ff 6.4%, #333558 106.46%);
+  padding: 50px 0;
+  /* .review__top */
+  /* .review__grid */
+  /* .review__card */
+  /* .review__card-top */
+  /* .review__card-user */
+  /* .review__card-stars */
+  /* .review__card-text */
+}
+
+.review__top {
+  background: #1b1b21;
+  padding: 20px 30px;
+  border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+  margin-bottom: 25px;
+}
+
+.review__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  gap: 10px 10px;
+}
+
+.review__card {
+  background: #1b1b21;
+  padding: 30px;
+  border-radius: 8px;
+}
+
+.review__card-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 8px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #464646;
+}
+
+.review__card-user {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 8px;
+}
+
+.review__card-user img {
+  border-radius: 50%;
+}
+
+.review__card-user h3 {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.review__card-user p {
+  font-size: 12px;
+  color: #b7b7b7;
+}
+
+.review__card-text {
+  max-width: 290px;
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 1.2;
+}
+
 @media (min-width: 1700px) {
   .hero {
     height: auto;
@@ -926,6 +1016,7 @@ nav {
 
   .our__wrapper {
     padding: 0;
+    border: none;
     background: transparent;
   }
 
@@ -936,6 +1027,10 @@ nav {
   .our__swiper {
     grid-template-columns: 1fr;
     gap: 30px;
+  }
+
+  .review__grid {
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   }
 }
 
