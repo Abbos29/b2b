@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="B2B Wallet">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>B2B Wallet</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+    <link rel="icon" href="./img/favicon.svg">
+    <link rel="stylesheet" href="./css/style.min.css">
+</head>
+
+<body class="main__body">
+
+    <!-- Header -->
+    <header>
+    <!-- Navbar -->
+    <nav>
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="./img/logo.svg" alt="logo">
+                        <span>Wallet</span>
+                    </a>
+                </div>
+                <ul class="menu">
+                    <li class="menu__item"><a href="#" class="menu__item-link link" data-scroll>Продукты</a></li>
+                    <li class="menu__item"><a href="#" class="menu__item-link link" data-scroll>Мерчантам</a></li>
+                    <li class="menu__item"><a href="#" class="menu__item-link link" data-scroll>О компании</a></li>
+                    <li class="menu__item"><a href="#" class="menu__item-link link" data-scroll>О Полезное</a></li>
+                </ul>
+
+                <div class="header__btns">
+                    <a class="header__btn-1" href="#">
+                        <img src="https://cdn-icons-png.flaticon.com/512/152/152532.png" alt="">
+                        <span>Войти</span>
+                    </a>
+                    <a class="header__btn-2 btn-main" href="#">Регистрация</a>
+                </div>
+
+                <div class="burger">
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+
+    <!-- Main Page -->
+    <main>
+
+        <!-- Fn -->
+        <div class="fn-container">
+	<section class="fn-section">
+		<div class="fn-section__header">
+			<div class="fn-section__icon-wrapper">
+				<img src="./img/transaction.png" alt="Иконка транзакции" class="fn-section__icon" />
+			</div>
+			<h2 class="fn-section__title">ТРАНЗАКЦИИ</h2>
+			<button class="fn-section__reload">
+				<img src="./img/reload.svg" alt="Обновить" />
+			</button>
+		</div>
+		<div class="fn-field">
+			<label for="tx-hash" class="fn-field__label">Хэш транзакции:</label>
+			<div id="tx-hash" class="fn-field__value">
+				57327f8db630f6310707768fc97e3dd82865b4c43a6e57e454a72b98966d0986
+			</div>
+		</div>
+		<div class="fn-field">
+			<label for="status" class="fn-field__label">Статус:</label>
+			<div id="status" class="fn-field__value">Подтверждена</div>
+		</div>
+		<div class="fn-field">
+			<label for="timestamp" class="fn-field__label">Время создания транзакции:</label>
+			<div id="timestamp" class="fn-field__value">4&#160;июня 2024&#160;г. 17:43</div>
+		</div>
+	</section>
+	<section class="fn-section">
+		<div class="fn-section__header">
+			<div class="fn-section__icon-wrapper">
+				<img src="./img/transaction2.png" alt="Иконка деталей" class="fn-section__icon" />
+			</div>
+			<h2 class="fn-section__title">Детали</h2>
+			<button class="fn-section__reload">
+				<img src="./img/reload.svg" alt="Обновить" />
+			</button>
+		</div>
+		<div class="fn-field">
+			<label for="recipient-address" class="fn-field__label">Адрес получателя:</label>
+			<div id="recipient-address" class="fn-field__value">LgDMPoKaLUYNjx3RZNyHBeCGWPUub7iYnE</div>
+		</div>
+		<div class="fn-field">
+			<label for="amount" class="fn-field__label">Сумма:</label>
+			<div id="amount" class="fn-field__value">0.77741059 LTC</div>
+		</div>
+	</section>
+</div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+    <div class="container">
+        <div class="footer__top">
+            <div class="footer__top-box">
+                <a href="index.html">B2B WALLET</a>
+                <p>2024</p>
+            </div>
+
+            <div class="footer__menu">
+                <a class="link" href="#">Продукты</a>
+                <a class="link" href="#">Мерчантам</a>
+                <a class="link" href="#">О компании</a>
+                <a class="link" href="#">Полезное</a>
+            </div>
+
+            <p class="footer__right">ВСЕ ПРАВА ЗАЩИЩЕНЫ</p>
+        </div>
+
+        <div class="footer__wrap">
+            <div class="footer__icons">
+                <img src="./img/footer-icon-1.png" alt="icon">
+                <img src="./img/footer-icon-2.png" alt="icon">
+            </div>
+
+            <a class="footer__policy" href="#">Политика конфиденциальности</a>
+
+            <div class="footer__soc">
+                <a href="#">
+                    <img src="./img/footer-soc-1.svg" alt="icon">
+                </a>
+
+                <a href="#">
+                    <img src="./img/footer-soc-2.svg" alt="icon">
+                </a>
+
+                <a href="#">
+                    <img src="./img/footer-soc-3.svg" alt="icon">
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+<script src="./js/scripts.min.js"></script>
+
+</html>
