@@ -115,4 +115,69 @@ function accordion() {
     })
   })
 }
-accordion() 
+accordion()
+
+
+
+
+// B2B
+
+document.addEventListener('DOMContentLoaded', function () {
+  const heroLeftInner = document.querySelector('#hero__b2b');
+  let currentIndex = 0;
+  const data = [
+    { amount: '-22 TON', description: 'Отправка TON Coin', status: 'ОТПРАВЛЕНО' },
+    { amount: '+15 TON', description: 'Получение TON Coin', status: 'ПОЛУЧЕНО' },
+    { amount: '-10 TON', description: 'Отправка TON Coin', status: 'ОТПРАВЛЕНО' },
+    { amount: '+20 TON', description: 'Получение TON Coin', status: 'ПОЛУЧЕНО' }
+  ];
+
+  function createCard({ amount, description, status }) {
+    const card = document.createElement('div');
+    card.className = 'hero__left-box';
+    card.innerHTML = `
+      <img src="./img/hero-icon.png" alt="icon">
+      <div>
+        <h3>${amount}</h3>
+        <p>${description}</p>
+      </div>
+      <h4>${status}</h4>
+    `;
+    return card;
+  }
+
+  function updateContent() {
+    // Create new card
+    const card = createCard(data[currentIndex]);
+
+    // Append the new card
+    heroLeftInner.appendChild(card);
+    setTimeout(() => {
+      card.classList.add('visible');
+    }, 0);
+
+    // Hide the previous card after 1 second
+    setTimeout(() => {
+      if (heroLeftInner.children.length > 1) {
+        heroLeftInner.children[0].classList.add('hidden');
+      }
+    }, 1000);
+
+    // Remove the previous card after it has been hidden (2 seconds total)
+    setTimeout(() => {
+      if (heroLeftInner.children.length > 1) {
+        heroLeftInner.removeChild(heroLeftInner.children[0]);
+      }
+    }, 2000);
+
+    // Update the currentIndex
+    currentIndex = (currentIndex + 1) % data.length;
+  }
+
+  // Initial call to display the first card
+  updateContent();
+
+  // Update content every 2 seconds
+  setInterval(updateContent, 2000);
+});
+
