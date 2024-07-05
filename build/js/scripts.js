@@ -168,7 +168,7 @@ document.addEventListener('DOMContentLoaded', function () {
       if (heroLeftInner.children.length > 1) {
         heroLeftInner.removeChild(heroLeftInner.children[0]);
       }
-    }, 2000);
+    }, 6000);
 
     // Update the currentIndex
     currentIndex = (currentIndex + 1) % data.length;
@@ -178,6 +178,6 @@ document.addEventListener('DOMContentLoaded', function () {
   updateContent();
 
   // Update content every 2 seconds
-  setInterval(updateContent, 2000);
+  setInterval(updateContent, 6000);
 });
 
